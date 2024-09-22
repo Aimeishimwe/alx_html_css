@@ -1,0 +1,479 @@
+/*Global reset */
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    width: 100%; /* Ensure full width */
+}
+/*THE FIRST SECTION */
+.head-mainsection {
+    background: url(Object.png);
+    padding: 100px;
+}
+/* Header Styling */
+header {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+/* Header Styling */
+header {
+    color: white;
+    padding: 20px;
+    text-align: right;
+}
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+header nav ul li a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+   
+}
+.logo {
+    float: left;        /* Moves the logo to the left */
+    margin-left: 2cm;     /* Removes any left margin, if present */
+  }
+  /*MAIN SECTION FOR MAIN TITLE*/
+ /* Centering and styling the title */
+.overlay h1 {
+    text-align: center; /* Center the title */
+    font-size: 2.5em; /* Increase font size */
+    font-weight: bold; /* Bold the text */
+    margin-bottom: 20px; /* Add space below the title */
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Styling the span container */
+.spans-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the spans */
+    gap: 30px; /* Add space between each span */
+    margin-bottom: 20px; /* Space below the spans */
+   
+}
+
+/* Styling individual spans */
+.spans-container span {
+    font-size: 1.2em; /* Adjust font size */
+    text-transform: uppercase; /* Make all text uppercase */
+    font-weight: bold; /* Bold the text */
+    color: white; /* Text color */
+}
+
+/* Styling the Register button */
+.cta-btn {
+    display: inline-block; /* Make the button behave like an inline-block */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 1.2em; /* Font size for the button */
+    text-align: center; /* Center text inside the button */
+    background-color: hsl(304, 28%, 49%); /* Button background color */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 25px; /* Rounded corners */
+    margin: 0 auto; /* Center the button itself */
+}
+
+/* Additional container styling to center the button */
+.overlay {
+    text-align: center; /* Ensure everything in the overlay is centered */
+}
+
+
+
+
+/* PROFILE-SECTION */
+
+/* Profile section styles */
+.profile-section {
+    text-align: center; /* Center align the title */
+    padding: 20px; /* Space around the section */
+    
+}
+
+/* Profiles container styles */
+.profiles {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space profiles evenly */
+    align-items: flex-start; /* Align items at the start */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-top: 20px; /* Space above profiles */
+}
+
+/* Individual profile styles */
+.profile {
+    flex: 1; /* Allow profiles to grow equally */
+    max-width: 200px; /* Set maximum width for each profile */
+    margin: 0 10px; /* Space between profiles */
+}
+
+/* Image styles */
+.profile img {
+    width: 100px; /* Set width for the image */
+    height: 100px; /* Set height for the image */
+    border-radius: 50%; /* Make image circular */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below image */
+}
+
+/* Name styles */
+.profile h3 {
+    margin: 5px 0; /* Space above and below name */
+    font-size: 1.2em; /* Increase font size */
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Description styles */
+.profile p {
+    font-size: 0.9em; /* Smaller font size for description */
+    color: white; /* Color for description text */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+  /*ONE SECTION */
+/* Section styles */
+.happy {
+    padding: 70px;
+    background-color:hsl(304, 28%, 49%); /* Background color for the section */
+    
+}
+/* Quote block styles */
+.aime-quote {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    gap: 80px;
+
+}
+
+/* Image styles */
+.her-quote {
+    width: 150px; /* Set width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+    margin-right: 20px; /* Space between image and text */
+}
+
+/* Quote text styles */
+.his-quote {
+    max-width: 600px; /* Limit the width of the text block */
+    color: white; /* Set text color to white */
+}
+
+/* Blockquote styles */
+.his-quote blockquote {
+    font-size: 2em; /* Increase font size for the quote */
+    margin: 0; /* Remove default margin */
+    font-style: italic; /* Italicize the quote */
+}
+
+/* Citation styles */
+.his-quote cite {
+    display: block; /* Display citation on a new line */
+    font-weight: bold; /* Make citation bold */
+    margin-top: 5px; /* Space above citation */
+    font-size: medium;
+}
+
+/* Paragraph styles */
+.his-quote p {
+    margin-top: 10px; /* Space above paragraph */
+    color: white; /* Ensure paragraph text is white */
+}
+
+  /*TUTORIAL SECTION*/
+/* General Section Styles */
+.inspiration-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Flexbox for the main container of quotes */
+.quotes-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    justify-content: space-around; /* Space cards evenly */
+    padding: 20px; /* Padding around the container */
+}
+
+/* Quote card style */
+.quote-card {
+    width: 220px; /* Fixed width for cards */
+    border: 1px solid #ddd; /* Light border around cards */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures child elements fit inside */
+    padding: 15px; /* Internal padding */
+    background-color: white; /* Background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 10px; /* Margin between cards */
+    text-align: center; /* Center text */
+}
+
+/* Video container */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    margin-bottom: 10px; /* Space below video */
+}
+
+/* Quote image */
+.quote-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the area without distortion */
+}
+
+/* Play icon */
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the icon */
+    width: 50px; /* Width of play icon */
+    height: 50px; /* Height of play icon */
+    border-radius: 50%; /* Circular play icon background */
+    background-color: rgba(254, 251, 251, 0.6); /* Dark background */
+    padding: 10px; /* Padding for icon */
+}
+
+/* Quote title and text */
+.quote-title {
+    font-size: 14px; /* Font size for title */
+    font-weight: bold; /* Bold title */
+    margin: 10px 0; /* Margin above and below */
+}
+
+.quote-text {
+    font-size: 14px; /* Font size for quote text */
+    color: #555; /* Text color */
+    margin-bottom: 10px; /* Margin below text */
+}
+
+/* Author block */
+.author-block {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin: 10px 0; /* Margin around author block */
+}
+
+/* Author image */
+.author-image {
+    width: 30px; /* Author image width */
+    height: 30px; /* Author image height */
+    border-radius: 50%; /* Circular author image */
+    margin-right: 10px; /* Space between image and name */
+}
+
+/* Author name */
+.author-name {
+    color: #121A26; /* Dark color for author name */
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+/* Rating block */
+.rating-block {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    font-weight: bold;
+    color: #121A26;
+}
+
+/* Rating time */
+.rating-time {
+    margin-left: 10px;
+    color: #121A26; /* Dark color for time */
+    font-size: 12px;
+}
+
+/* QUOTE SECTION */
+
+
+  /*MEMBERSHIP SECTION */
+  
+  .membership-section {
+    width: 82vw; /* Full width of the screen */
+    padding: 120px; /* Padding around the section */
+    background-color: #121A26; /* Background color for the section */
+    text-align: center; /* Center text within the section */
+}
+
+.card-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center cards horizontally */
+    flex-wrap: wrap; /* Allow wrapping if the screen is small */
+    gap: 20px; /* Space between cards */
+    margin-top: 20px; /* Space above the cards */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: small;
+}
+
+.card {
+    background-color: #121A26; /* Background color for cards */
+    padding: 15px; /* Padding inside cards */
+    width: 200px; /* Fixed width for cards */
+    display: flex; /* Use flexbox for the card layout */
+    flex-direction: column; /* Align content vertically */
+    align-items: center; /* Center the content horizontally */
+    justify-content: flex-start; /* Align items to the top */
+    text-align: center; /* Center text in the card */
+}
+
+.card-head {
+    margin-bottom: 10px; /* Space between header and other elements */
+    font-weight: bold; /* Make the header bold */
+    font-size: 1.2em; /* Slightly increase the font size */
+    width: 100%; /* Ensure header takes up full width */
+    text-align: center; /* Center text inside the header */
+}
+
+.register-container {
+    margin-top: 20px; /* Space above the button */
+    text-align: center; /* Center the button container */
+}
+
+.register-btn {
+    padding: 8px 25px; /* Padding for the button */
+    background-color: hsl(304, 28%, 49%); /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 25px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button */
+    margin-top: auto;
+}
+
+.register-btn:hover {
+    background-color: #bf3081; /* Darker button color on hover */
+}
+
+.register-container {
+    display: flex;
+    justify-content: center; /* Center the button */
+    margin-top: 20px; /* Space between cards and button */
+}
+.card-head {
+    margin-bottom: 10px; /* Space between header and other elements */
+    font-weight: bold; /* Make the header bold */
+    font-size: 1.6em; /* Increase the font size for the entire title */
+    width: 100%; /* Ensure header takes up full width */
+    text-align: center; /* Center the header text */
+}
+
+.highlight-free {
+    color: hsl(304, 28%, 49%); /* Change color for 'Free' */
+    font-size: 1.8em; /* Make 'Free' slightly bigger than the rest */
+}
+
+  /*F.A.Q SECTION */
+  .faq-section {
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: auto;
+    background-color: white;
+  }
+  .faq-header {
+    text-align: center;
+    font-weight: normal;
+  }
+  .faq-qns {
+    display: grid; /* Grid layout for FAQ questions */
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    grid-gap: 20px; /* Space between FAQ items */
+    padding: 25px; /* Padding around the FAQ container */
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.faq-qns1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+    .faq-qns, .faq-qns1 {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+}
+/*FOOTER SECTION */
+footer {
+    background-color: #121A26; /* Background color */
+    padding: 70px; /* Space around the footer */
+    width: 100vw; /* Ensure full width */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Space between top content and copyright */
+    height: auto; /* Allow height to adjust based on content */
+    flex-wrap: wrap;
+}
+
+.global-block {
+    text-align: center; /* Center text for copyright */
+}
+
+.row-block {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center vertically */
+}
+
+.footer-logo {
+    margin-right: auto; /* Push the logo to the left */
+}
+
+.social-links {
+    display: flex; /* Align social links in a row */
+    align-items: center; /* Center icons vertically */
+    justify-content: center; /* Center the icons */
+    flex-wrap: wrap; /* Allow wrapping if space is constrained */
+    margin-right: 200px;
+}
+
+.social-links a {
+    display: inline-flex; /* Center the icon */
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
+    width: 30px; /* Set a fixed width */
+    height: 30px; /* Set a fixed height */
+    border-radius: 50%; /* Make it circular */
+    background-color: #121A26; /* Circle background color */
+    margin: 0 2px; /* Adjust this value to reduce distance */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social-links a img {
+    width: 20px; /* Adjust icon size */
+    height: 20px; /* Adjust icon size */
+}
+
+.copyright {
+    margin-top: 100px; /* Space above copyright text */
+    text-align: center; /* Center the copyright text */
+    color: white;
+    font-size: small;
+}
