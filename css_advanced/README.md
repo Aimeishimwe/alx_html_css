@@ -25,9 +25,7 @@ The platform consists of several key sections:
 
 ## How to Use
 
-1. Clone the repository to your local machine.
-   ```bash
-   git clone https://github.com/yourusername/life-experts-platform.git
+1. Clone the repository to your local machine, using: "git clone https://github.com/yourusername/life-experts-platform.git"
 Open the index.html file in your preferred browser to explore the structure and content.
 Customize the platform by adding your own experts, content, and styles.
 - **Future Enhancements**
@@ -36,4 +34,4 @@ Customize the platform by adding your own experts, content, and styles.
 **Introduce real-time chat with experts.**
 **Expand to include live video sessions for interactive learning.**
 **Contributing**
-**We welcome contributions! Please feel free to submit pull requests or report any issues**.
+**We welcome contributions! Please feel free to submit pull requests or report any issues**
