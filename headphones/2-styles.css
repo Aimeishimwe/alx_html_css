@@ -1,0 +1,358 @@
+/*Global reset */
+html, body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  width: 100%; /* Ensure full width */
+  gap: 0;
+}
+
+
+.hero-piece{
+ background-image: url(Images/headphones_hero_1.jpg);
+  padding: 150px;
+}
+.navigations {
+  position: absolute; /* This allows us to move it */
+  top: 0;            /* Align it to the top */
+  right: 2cm;           /* Align it to the right */
+  margin-top: 1cm;
+}
+
+
+.navigations ul {
+  list-style-type: none;
+  margin-left: auto;
+}
+.navigations ul li {
+  display: inline;
+  margin-right: 20px;
+}
+.navigations li a {
+  color: white;
+  font-size: small;
+  font-weight: 700;
+  text-decoration: none;
+  opacity: 0.8;
+  
+ 
+}
+.logo {
+ position: absolute;
+ top: 0;
+ left: 2cm;
+ margin-top: 1cm;
+}
+.logo-img {
+  width: 150px;  /* Set desired width */
+  height: auto;  /* Maintain the aspect ratio */
+  margin-right: 100px;
+}
+/*HEADING AND TEXT */
+.main {
+  text-align: center;
+  color: white;
+  font-family:sans-serif;
+  margin-top: 180px;
+  
+}
+.main h1 {
+  margin-bottom: 0;
+  font-size: 30px;
+  
+}
+.above-button p {
+  font-weight: 700;
+  
+}
+.below-button p {
+  opacity: 0.8;
+
+}
+.main p{
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 40px;
+  margin-bottom: 80px;
+
+}
+ /*WHAT WE DO SECTION */ 
+ .whatwedo-section {
+  padding: 90px;
+ }
+.media-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* This will create four equal columns */
+  gap: 10px; /* Add some space between the columns */
+  background-color: white; /* Optional background color */
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.media-icons p {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.icon-item {
+  text-align: center;
+  padding: 10px;
+}
+
+.icon-item span {
+  font-size: 80px; /* Adjust the size of the icon */
+  display: block;
+  margin-bottom: 10px;
+  color: #ff6b6b; /* You can customize the color of the icons */
+}
+
+.icon-item h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0.8;
+}
+
+.icon-item p {
+  font-size: 14px;
+  color: #555; /* Optional text color */
+}
+.what-we-do {
+  text-align: center;
+  font-family: sans-serif;
+  opacity: 0.9;
+ }
+ .what-we-do p{
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+ }
+ /* Hamburger Menu Styles */
+.hamburger {
+  display: none; /* Hidden by default */
+  flex-direction: column; /* Stack the bars vertically */
+  justify-content: space-between;
+  align-items: flex-start; /* Align all bars to the left */
+  width: 30px; /* Width of the container */
+  height: 20px; /* Height to fit the three bars */
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px; /* Move the hamburger to the left side */
+}
+
+/* Create the three horizontal bars */
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%; /* Full width for the top and bottom bars */
+  background-color: white; /* You can change the color */
+  margin-bottom: 5px;
+  transition: 0.3s ease; /* Smooth animation for potential transformations */
+}
+
+/* Make the middle bar shorter */
+.hamburger span:nth-child(2) {
+  width: 60%; /* Shorter width for the middle bar */
+}
+
+.menu-toggle {
+  display: none; /* Hide the checkbox */
+}
+
+/* MEDIA QUERRIES FOR RESPONSIVENESS FOR THE FIRST TWO UPPER SECTIONS */
+
+/* Tablet styles (480px to 768px) */
+@media (min-width: 480px) and (max-width: 768px) {
+  /* Two rows of icons */
+  .media-icons {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+  }
+
+  .hamburger {
+    display: none; /* No hamburger menu for tablets */
+  }
+
+  /* Adjust navigation for tablet view */
+  .navigations ul li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  /* Ensure the background image fits the screen properly */
+  .hero-piece {
+    padding: 100px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.logo-img {
+  margin-right: 9cm;
+}
+/* Phone styles (max-width: 480px) */
+@media (max-width: 480px) {
+  /* Hamburger menu visible */
+  .hamburger {
+    display: flex; /* Show the hamburger menu */
+  }
+
+  /* When the hamburger is clicked, show the nav links */
+  .menu-toggle:checked + .navigations ul {
+    display: block;
+  }
+
+  .navigations ul {
+    display: none; /* Hide the links by default */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for mobile menu */
+    padding: 20px;
+    width: 100%;
+  }
+
+  .navigations ul li {
+    margin-bottom: 10px; /* Space between links */
+  }
+
+  .media-icons {
+    grid-template-columns: 1fr; /* One column for phones */
+  }
+
+  /* Adjust the hero section */
+  .hero-piece {
+    padding: 80px 20px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+/* Center the logo on mobile devices */
+.logo {
+  position: absolute; /* Keep it absolute to control placement */
+  top: 10px; /* Adjust top position as needed */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, 0); /* Adjust to truly center the logo */
+}
+ 
+/* OUR RESULTS SECTION */
+
+.our-results-section {
+  text-align: center;
+  background-image:url(Images/headphones_hero_2.jpg);
+  background-size: cover;
+  padding: 100px;
+  font-family: sans-serif;
+}
+.our-results-section h1{
+  margin-bottom: 30px;
+  color: white;
+
+} 
+.our-results-section p {
+  color: white;
+  opacity: 0.9;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.our-results {
+  display: flex;            /* Arrange the pentagons in a row */
+  justify-content: space-around;  /* Space out the items evenly */
+  align-items: center;       /* Center items vertically */
+  margin-top: 100px;
+}
+
+.our-results span {
+  position: relative;        /* Needed to position text inside the image */
+  display: inline-block;     /* Keeps the image and text inline */
+}
+
+.our-results span img {
+  width: 150px;              /* Set the size of the pentagon image */
+  height: auto;              /* Keep the aspect ratio */
+}
+
+.our-results h2, .our-results p {
+  position: absolute;        /* Position text inside the pentagon */
+  top: 50%;                  /* Start at the vertical center */
+  left: 50%;                 /* Start at the horizontal center */
+  transform: translate(-50%, -50%); /* Center the text using transform */
+  text-align: center;        /* Center the text inside the image */
+  color: white;              /* Make the text visible on the image */
+  width: 100%;               /* Ensure the text does not overflow */
+}
+
+.our-results h2 {
+  font-size: 1.5em;          /* Increase the size for the percentage */
+  margin: 0;
+}
+
+.our-results p {
+    font-size: 0.9em;          /* Reduce font size to fit better */
+    margin-top: 30px;          /* Adjust space between h2 and p */
+    max-width: 80%;            /* Limit the width of the text to prevent overflow */
+    word-wrap: break-word;     /* Force wrapping if a word is too long */
+    white-space: normal;       /* Ensure the text wraps within the box */
+  }
+ /* MEDIA QUERRIES FOR RESPONSIVENESS FOR OUR RESULTS SECTION */
+ .our-results-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.our-results {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns by default */
+  gap: 20px;
+  justify-items: center;
+}
+
+.our-results span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Tablet styles (480px to 768px) */
+@media (min-width: 480px) and (max-width: 768px) {
+  .our-results {
+    grid-template-columns: 1fr 1fr; /* Two columns for tablets */
+  }
+
+  .our-results-section h1, .our-results-section p {
+    padding: 0 20px; /* Adjust padding for better fit */
+  }
+}
+
+/* Phone styles (max-width: 480px) */
+@media (max-width: 480px) {
+  .our-results {
+    grid-template-columns: 1fr; /* One column for phones */
+  }
+  .hamburger {
+    display: flex; /* Show the hamburger menu */
+  }
+
+  .our-results-section h1, .our-results-section p {
+    padding: 0 10px; /* Further reduce padding for small screens */
+  }
+
+  .our-results span {
+    margin-bottom: 20px;
+  }
+}
+
+ 
