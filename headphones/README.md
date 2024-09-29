@@ -2,9 +2,9 @@
 ## Description
 This project is a responsive webpage for a headphone company, designed to work seamlessly on mobile phones, tablets, and desktops. The webpage is built using only HTML and CSS and follows the layout provided in a Figma design file.
 ## Screenshots
-![Desktop View](path_to_desktop_screenshot.png)
-![Tablet View](path_to_tablet_screenshot.png)
-![Mobile View](path_to_mobile_screenshot.png)
+![Desktop View](Images/Desktop_view.png)
+![Tablet View](Images/Tablet_view.png)
+![Mobile View](Images/mobile_view.png)
 ## Installation and Setup
 
 1. Clone the repository:
