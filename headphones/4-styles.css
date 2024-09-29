@@ -380,31 +380,42 @@ textarea:focus {
 /* Phone styles (max-width: 480px) */
 @media (max-width: 480px) {
   .hamburger {
-    display: flex; /* Show hamburger menu on phones */
+      display: flex; /* Show hamburger menu on phones */
+      cursor: pointer; /* Change cursor to pointer */
   }
 
-  .menu-toggle:checked + .navigations ul {
-    display: block;
+  .menu-toggle {
+      display: none; /* Hide the checkbox */
   }
 
-  .navigations ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    background-color: #121A26;
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    margin: 0;
+  /* Show the navigation links when the checkbox is checked */
+  .menu-toggle:checked + .hamburger + .navigations ul {
+      display: flex; /* Display the menu in a column */
   }
 
+  /* Style the navigation links */
   .navigations ul li {
-    display: block;
-    padding: 10px;
-    margin-right: 0;
+      padding: 15px 20px; /* Add padding for each link */
+      border-bottom: 1px solid #ccc; /* Add a border between links */
+      text-align: left; /* Align text to the left */
   }
+
+  .navigations ul li:last-child {
+      border-bottom: none; /* Remove border from the last item */
+  }
+
+  .navigations ul li a {
+      text-decoration: none; /* Remove underline from links */
+      color: #000; /* Text color */
+      display: block; /* Make the entire area clickable */
+      transition: background 0.3s; /* Smooth transition for hover effect */
+      font-size: 12px;
+  }
+
+  .navigations ul li a:hover {
+      background: #e0e0e0; /* Change background on hover */
+  }
+}
 
   .hero-piece {
     padding: 50px;
@@ -437,4 +448,3 @@ textarea:focus {
   .our-results span img {
     width: 120px;
   }
-}

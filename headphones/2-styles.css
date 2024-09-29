@@ -339,12 +339,43 @@ html, body {
 
 /* Phone styles (max-width: 480px) */
 @media (max-width: 480px) {
-  .our-results {
-    grid-template-columns: 1fr; /* One column for phones */
-  }
   .hamburger {
-    display: flex; /* Show the hamburger menu */
+      display: flex; /* Show hamburger menu on phones */
+      cursor: pointer; /* Change cursor to pointer */
   }
+
+  .menu-toggle {
+      display: none; /* Hide the checkbox */
+  }
+
+  /* Show the navigation links when the checkbox is checked */
+  .menu-toggle:checked + .hamburger + .navigations ul {
+      display: flex; /* Display the menu in a column */
+  }
+
+  /* Style the navigation links */
+  .navigations ul li {
+      padding: 15px 20px; /* Add padding for each link */
+      border-bottom: 1px solid #ccc; /* Add a border between links */
+      text-align: left; /* Align text to the left */
+  }
+
+  .navigations ul li:last-child {
+      border-bottom: none; /* Remove border from the last item */
+  }
+
+  .navigations ul li a {
+      text-decoration: none; /* Remove underline from links */
+      color: #000; /* Text color */
+      display: block; /* Make the entire area clickable */
+      transition: background 0.3s; /* Smooth transition for hover effect */
+      font-size: 12px;
+  }
+
+  .navigations ul li a:hover {
+      background: #e0e0e0; /* Change background on hover */
+  }
+}
 
   .our-results-section h1, .our-results-section p {
     padding: 0 10px; /* Further reduce padding for small screens */
@@ -353,6 +384,4 @@ html, body {
   .our-results span {
     margin-bottom: 20px;
   }
-}
-
  
