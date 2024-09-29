@@ -211,7 +211,7 @@ html, body {
   .pentagon {
     width: 100px; /* Adjust size as needed */
     height: 100px; /* Adjust size as needed */
-    background-color: red; /* Adjust color as needed */
+    background-color: #ff6b6b; /* Adjust color as needed */
     clip-path: polygon(50% 0%, 100% 38%, 81% 100%, 19% 100%, 0% 38%);
     display: flex;
     flex-direction: column;
@@ -383,33 +383,60 @@ textarea:focus {
 }
 
 /* Phone styles (max-width: 480px) */
+/* General styles for the navigation */
+.navigations ul {
+  display: none; /* Hide the menu by default */
+  flex-direction: column; /* Stack links vertically */
+  position: absolute; /* Position the menu absolutely */
+  top: 60px; /* Adjust the distance from the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width of the container */
+  background: #f0f0f0; /* Background color for the menu */
+  padding: 10px 0; /* Padding for the whole menu */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+/* Phone styles (max-width: 480px) */
 @media (max-width: 480px) {
   .hamburger {
-    display: flex; /* Show hamburger menu on phones */
+      display: flex; /* Show hamburger menu on phones */
+      cursor: pointer; /* Change cursor to pointer */
   }
 
-  .menu-toggle:checked + .navigations ul {
-    display: block;
+  .menu-toggle {
+      display: none; /* Hide the checkbox */
   }
 
-  .navigations ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    background-color: #121A26;
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    margin: 0;
+  /* Show the navigation links when the checkbox is checked */
+  .menu-toggle:checked + .hamburger + .navigations ul {
+      display: flex; /* Display the menu in a column */
   }
 
+  /* Style the navigation links */
   .navigations ul li {
-    display: block;
-    padding: 10px;
-    margin-right: 0;
+      padding: 15px 20px; /* Add padding for each link */
+      border-bottom: 1px solid #ccc; /* Add a border between links */
+      text-align: left; /* Align text to the left */
   }
+
+  .navigations ul li:last-child {
+      border-bottom: none; /* Remove border from the last item */
+  }
+
+  .navigations ul li a {
+      text-decoration: none; /* Remove underline from links */
+      color: #000; /* Text color */
+      display: block; /* Make the entire area clickable */
+      transition: background 0.3s; /* Smooth transition for hover effect */
+      font-size: 12px;
+  }
+
+  .navigations ul li a:hover {
+      background: #e0e0e0; /* Change background on hover */
+  }
+}
+
 
   .hero-piece {
     padding: 50px;
@@ -422,7 +449,7 @@ textarea:focus {
   }
 
   .socials {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
@@ -442,4 +469,3 @@ textarea:focus {
   .our-results span img {
     width: 120px;
   }
-}
